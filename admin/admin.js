@@ -1,4 +1,4 @@
-const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:5501';
+const BACKEND_URL = 'http://127.0.0.1:5501';
 async function loadSubmissions() {
   try {
     const res = await fetch(`${BACKEND_URL}/submissions`);
