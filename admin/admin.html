@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Submissions</title>
+    <title>Submissions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./admin.css">
 </head>
 <body>  
     <header class="header-bar">
         <div class="header-content">
             <h1 class="header-title">
-                <span class="header-highlight">Admin</span> Submission Dashboard
+                <span class="header-highlight">See</span> Submission Dashboard
             </h1>
         </div>
     </header>
@@ -22,6 +25,12 @@
         </div>
         <div id="submissions-grid" class="card-grid"></div>
     </main>
-    <script src="./admin.js"></script>
+        <!-- Inline config: set BACKEND_URL to the API root that serves /api/submissions, /api/delete, /api/uploads/:id -->
+        <script>
+            // Change this to the backend URL that hosts the API (serverless or standalone).
+            // Defaulted to your web A domain; update if your API is on a different host.
+            const BACKEND_URL = 'https://intellisensenud.vercel.app';
+        </script>
+        <script src="./admin.js"></script>
 </body>
 </html>
